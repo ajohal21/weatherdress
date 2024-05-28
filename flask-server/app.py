@@ -10,7 +10,7 @@ def index():
     state = 'BC'
     country = 'Canada'
     data = get_weather(city, state, country)
-    return f"Current weather: {data.description}, Temperature: {data.temperature}°C, Feels Like: {data.feels_like}"
+    return f"Current weather in {city}: {data.description}, Temperature: {data.temperature}°C, Feels Like: {data.feels_like}"
 
 
 if __name__ == "__main__":
